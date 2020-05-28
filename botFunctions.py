@@ -39,7 +39,7 @@ def erinnerungFabi(option):
         return str(_replace)
 
 def getWetter(city):
-	_apikey: str = 'enter_api_key'
+    _apikey: str = 'enter_api_key'
     _apiurl = 'https://api.openweathermap.org/data/2.5/weather?q=' + city + '&APPID=' + _apikey + '&units=metric'
     _apireq = requests.get(_apiurl)
     _apidata = _apireq.json()
